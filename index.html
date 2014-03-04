@@ -3,12 +3,16 @@
 	<!--[if lt IE 9]>
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
-  	<link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow' rel='stylesheet' type='text/css'>
 	<style>
+	body {
+		background: #2E2E2E;
+	}
 	header {
 		text-align: center;
 		background: url('http://static.guim.co.uk/sys-images/Guardian/About/General/2011/11/9/1320838491580/paint-brush-strokes-005.jpg');
 		background-size: cover;
+		color: #000000;
 	}
 	table {
 		margin: 0 auto;
@@ -17,7 +21,6 @@
 		display: inline;
 		font-size: 70px;
 		margin: 30px;
-		font-family: 'Akronim', cursive;
 	}
 	ul {
 		padding: 10px;
@@ -34,14 +37,31 @@
 	}
 	h2 {
 		margin-left: 20px;
-		color: red;
+		font-size: 30px;
+		color: white;
+	}
+	div {
+		margin-left: 40px;
+		background-size: cover;
+	}
+	.funkyfont {
+		font-family: 'Jacques Francois Shadow', cursive;
+		text-shadow: 10px 0px 20px #FFFFFF;
+		font-style: italic;
+	}
+	.wounding {
+		width: 300px;
+		background-image: url("./Wounding-small.jpeg");
+	}
+	.picture2 {
+		width: 300px;
 	}
 	</style>
 </head>
 <body>
 	<header>
 		<br></br>
-		<h1>Victoria Winter</h1>
+		<h1 class="funkyfont">Victoria Winter</h1>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About Victoria</a></li>
@@ -51,5 +71,13 @@
 		</ul>
 	</header>
 	<h2>Latest Work</h2>
-	<img src="./Wounding.jpeg" alt="Wounding" style="height:auto; width:auto; max-width:300px;">
+	<div>
+		<div class="wounding">
+			<p>Wounding <span class="price">£300</span></p>
+		</div>
+		<div class="picture2">
+			<p>Picture2 <span class="price">£350</span></p>
+		</div>
+	</div>
+	/*<img src="./Wounding-small.jpeg" alt="Wounding" style="height:auto; width:auto; max-width:300px;">*/
 </body>
